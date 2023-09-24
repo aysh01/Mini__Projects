@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <title>Search - Books | Online</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--======Search-Bar----->
+        <div class="search-box">
+            <i src="/"></i>
+            <input type="text" id="shrink" placeholder="Find Books Online" onclick="shrink()">
+        </div>
+        <script>
+            function shrink() {
+                document.getElementById("shrink").style.color = "black";
+                document.getElementById("shrink").style.transition = "0.5s";
+            }
+
+            function img1(x) {
+                x.style.backgroundImage = "-webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%)";
+                x.style.height = "250px";
+                x.style.width = "210px";
+                x.style.transition = "0.5s";
+                // document.getElementById("text").style.display = "block";
+            }
+
+            function img(x) {
+                x.style.backgroundImage = "none";
+                x.style.height = "300px";
+                x.style.transition = "210px";
+                // document.getElementById("text").style.display = "none";
+            }
+
+        </script>
+        <div class="images">
+            <!----Science-Fiction-->
+            <div class="image-box" data-name="mba" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N2953-1-247x296.jpg" alt="">
+                <h6 id= "text" onmouseover="text1(this)" onmouseout="text(this)">
+            </div>
+            <div class="image-box" data-name="mba" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N4776_new-247x296.jpg" alt="">
+                <h6>joker</h6>
+            </div>
+            <div class="image-box" data-name="bba" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N4897-247x296.jpg" alt="">
+                <h6>ironman</h6>
+            </div>
+            <div class="image-box" data-name="bba" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N4898-247x296.jpg" alt="">
+                <h6>passenger</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5871-247x296.jpg" alt="">
+                <h6>the space</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5872-247x296.jpg" alt="">
+                <h6>spiderman 2</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5874-247x296.jpg" alt="">
+                <h6>the universe</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5875-247x296.jpg" alt="">
+                <h6>spiderman 3</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5954-247x296.jpg" alt="">
+                <h6>holiday</h6>
+            </div>
+            <div class="image-box" data-name="bca" onmouseover="img1(this)" onmouseout="img(this)">
+                <img src="/ProjecT (Library)/imagesbkup/Books/search/N5955-247x296.jpg" alt="">
+                <h6>ironman 2</h6>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const search = document.querySelector(".search-box input"),
+        images = document.querySelectorAll(".image-box");
+
+    search.addEventListener("keyup", e => {
+        if (e.key == "Enter") {
+            let searcValue = search.value,
+                value = searcValue.toLowerCase();
+            images.forEach(image => {
+                if (value === image.dataset.name) {
+                    //matching value with getting attribute of images
+                    return image.style.display = "block";
+                }
+                image.style.display = "none";
+            });
+        }
+    });
+
+    search.addEventListener("keyup", () => {
+        if (search.value != "") return;
+
+        images.forEach(image => {
+            image.style.display = "block";
+        })
+    })
+</script>
+
+</html>

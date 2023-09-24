@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <title>Log | In as Admin |</title>
+</head>
+
+<body>
+  <div class="content">
+    <div>
+      <section class="container forms">
+        <!-- Login Form -->
+        <div class="form login">
+          <div class="form-content">
+            <header>Admin - Login</header>
+            <form action="#">
+              <div id="data">
+                <div class="field input-field">
+                  <input type="email" id="email1" placeholder="Admin Email" class="input" required>
+                </div>
+
+                <div class="field input-field">
+                  <input type="password" id="password1" placeholder="Admin Password" class="password" required>
+                  <i class='bx bx-hide eye-icon'></i>
+                </div>
+              </div>
+              <script>
+                function login1() {
+                  //   // var email = "admin09@gmail.com";
+                  //   // var password = "admin09";
+                  var email = document.getElementById("email1").value;
+                  var password = document.getElementById("password1").value;
+                  if (email == "admin09@gmail.com" && password == "admin09") {
+                    window.location.assign("dashboard.html");
+                    alert("Login Sucessfully!");
+                  }
+                  else {
+                    alert("Please provide Admin Password / Email..");
+                    return;
+                  }
+                }
+
+                  // function login() {
+                  //   window.alert("Please enter fields..");
+                  //   var data=document.getElementById("data");
+                  //   data.addEventListener("keyup", e => {
+                  //     if (document.getElementById("data").value != "") {
+                  //       // window.alert("abc!");
+                  //     }
+                  //   });
+
+                  // }
+                  // if (email === "123@gmail.com" && password === "123") {
+                  //   window.location.assign("index.html");
+                  // }
+                  // else {
+                  //   window.alert("----");
+                  // }
+                // }
+              </script>
+              <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+              </div>
+
+              <div class="field button-field">
+                <button id="btn" type="reset" onclick="login1()">Login</button>
+              </div>
+            </form>
+
+            <div class="form-link">
+              <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="media-options">
+            <a href="#" class="field facebook">
+              <i class='bx bxl-facebook facebook-icon'></i>
+              <span>Login with Facebook</span>
+            </a>
+          </div>
+
+          <div class="media-options">
+            <a href="#" class="field google">
+              <img src="images/google.png" alt="" class="google-img">
+              <span>Login with Google</span>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

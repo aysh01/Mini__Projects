@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/SideNav3.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <title>Audio | Books</title>
+</head>
+
+<body>
+    <div id="preloader-audio">
+        <script>
+            var loader = document.getElementById("preloader-audio");
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+    </div>
+    <div class="container">
+        <div>
+            <img src="/Images/Logo/AudioBook.png" height="140px" width="180px" style="cursor: pointer;"
+                onmouseover="log(this)" onmouseout="lon(this)">
+            <script>
+                function log(x) {
+                    //p
+                    document.getElementById("p").style.marginTop = "-79px";
+                    document.getElementById("p").style.display = "flex";
+                    document.getElementById("p").style.transition = "0.5s";
+                    document.getElementById("p").style.marginLeft = "0%";
+                    //p1
+                    document.getElementById("p1").style.display = "flex";
+                    document.getElementById("p1").style.color = "white";
+                    document.getElementById("p1").style.transition = "0.5s";
+                    document.getElementById("p1").style.marginTop = "-1.7%";
+                    document.getElementById("p1").style.marginLeft = "10.4%";
+                }
+                function lon(x) {
+                    //p
+                    document.getElementById("p").style.marginTop = "-79px";
+                    document.getElementById("p").style.display = "flex";
+                    document.getElementById("p1").style.color = "";
+                    document.getElementById("p").style.transition = "0.5s";
+                    document.getElementById("p").style.marginLeft = "-4%";
+                    //p1
+                    document.getElementById("p1").style.display = "flex";
+                    document.getElementById("p1").style.color = "";
+                    document.getElementById("p1").style.transition = "0.5s";
+                    document.getElementById("p1").style.marginTop = "-1.7%";
+                    document.getElementById("p1").style.marginLeft = "12%";
+                }
+            </script>
+            <p id="p" style="color: white;margin-top: -79px;margin-left: -50px;">Audio</p>
+            <p id="p1" style="color: black;margin-left: 17%;margin-top: -1.7%;">Books</p>
+        </div>
+        <div class="nav-left-1">
+            <div id="nav" class="nav-left-1-images-" onclick="shift()">
+                <div class="navigation max-width-1 m-auto">
+                    <div>
+                        <!---Navigation Bar-->
+                        <img id="img" src="/" height="20px" width="40px"
+                            style="margin-left: 10vw;margin-top: 3vh;display: none;cursor: pointer;">
+                        <!--SignUp--->
+                    </div>
+                </div>
+                <!-- <div id="myNav1" class="overlay1">
+                    <div class="overlay-content1">
+                        <img src="Images/Logo/Logo.jpg" alt="Logo-Here" class="nav-left-logo1">
+                        <a href="index.html" class="overlay-content-1-"
+                            style="width: 127px; border: 2px solid black;">Home</a>
+                        <a href="#" class="overlay-content-1-" style="width: 127px; 
+                        border: 2px solid black; border-block-start: inherit;">About us</a>
+                        <a href="Books.html" class="overlay-content-1-" style="width: 127px; 
+                        border: 2px solid black; border-block-start: inherit;">Audio-Books</a>
+                    </div>
+                </div> -->
+                <span id="dash" class="dash1" onclick="img()">&#9776;</span>
+                <span id="dash1" class="dash2" style="display: none;" onclick="img1()">&#9783;</span>
+                <script>
+                    function img() {
+                        document.getElementById("img").style.display = "flex";
+                        document.getElementById("dash").style.marginTop = "-40px";
+                        document.getElementById("dash1").style.marginTop = "-40px";
+                        document.getElementById("dash").style.display = "none";
+                        document.getElementById("dash1").style.display = "unset";
+                    }
+
+                    function img1() {
+                        document.getElementById("dash1").style.display = "none";
+                        document.getElementById("dash").style.display = "unset";
+                        document.getElementById("img").style.display = "none";
+                        document.getElementById("dash").style.marginTop = "unset";
+                    }
+
+                    function bigImg(x) {
+                        x.style.height = "314px";
+                        x.style.width = "207px";
+                        x.style.transition = "0.5s";
+                        x.style.borderRadius = "15px";
+                        x.style.boxShadow = "2px 0px 11px 3px";
+                    }
+
+                    function normalImg(x) {
+                        x.style.height = "300px";
+                        x.style.width = "200px";
+                        x.style.boxShadow = "none";
+                        x.style.borderRadius = "0px";
+                        x.style.transition = "0.5s";
+                    }
+
+                    function expand() {
+                        document.getElementById("exp").style.visibility = "unset";
+                        document.getElementById("exp").style.transition = "0.5s";
+                        document.getElementById("exp").style.boxShadow = "2px 0px 11px 3px";
+                        document.getElementById("exp").style.color = "black";
+                        document.getElementById("Season1").style.display = "block";
+                        document.getElementById("Season2").style.display = "none";
+                        document.getElementById("p").style.color = "white";
+                    }
+
+                    function times(x) {
+                        x.style.boxShadow = "none";
+                        x.style.color = "#00627f";
+                        x.style.transition = "0.5s";
+                        // x.style.fontSize = "50.5px";
+                    }
+
+                    function times1(x) {
+                        x.style.boxShadow = "none";
+                        x.style.color = "#ffffff94";
+                        x.style.transition = "0.5s";
+                        // x.style.fontSize = "50px";
+                    }
+
+                    function xtimes() {
+                        document.getElementById("exp").style.visibility = "hidden";
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div id="stick" class="image-navbar">
+                    <!--Change Image-->
+                    <img src="/" height="300px" width="200px" style="margin-left: 10px;cursor: pointer;"
+                        onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="expand()">
+                    <img src="/" height="300px" width="200px"
+                        style="margin-top: 30px;margin-left: 10px;cursor: pointer;" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)" onclick="expand()">
+                    <img src="/" height="300px" width="200px"
+                        style="margin-top: 30px;margin-left: 10px;cursor: pointer;" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)">
+                    <img src="/" height="300px" width="200px"
+                        style="margin-top: 30px;margin-left: 10px;cursor: pointer;" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)">
+                    <img src="/" height="300px" width="200px"
+                        style="margin-top: 30px;margin-left: 10px;cursor: pointer;" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)">
+                    <img src="/" height="300px" width="200px"
+                        style="margin-top: 30px;margin-left: 10px;cursor: pointer;" onmouseover="bigImg(this)"
+                        onmouseout="normalImg(this)">
+                </div>
+                <div id="exp" class="image-exp">
+
+                    <img src="/" height="300px" width="200px">
+                    <div style="height: 100%;width: 80%;margin-left: 20%;margin-top: -23.5%;border: 2px solid white;
+                    border-radius: 9px;">
+                        <div style="margin-left: 97.4%;font-size: 50px;margin-top: -7%;color: #ffffff94;cursor: pointer;"
+                            onmouseover="times(this)" onmouseout="times1(this)" onclick="xtimes()">&times;</div>
+                        <!--SongList-->
+                        <div style="width: 99%;height: 98.5%;overflow: scroll;padding: 5px;scroll-behavior: smooth;">
+                            <!--ScrollBar-->
+                            <div
+                                style="width: 98.5%;height: 8%;background-color: black;border-radius: 9px;margin-left: 0.5%;">
+                                <!--Season 1,2,3-->
+                                <div
+                                    style="width: 34%;height: 93%;background-color: aqua;border-radius: 9px;margin-left: 0.5%;">
+                                    <p id="p"
+                                        style="font-family: var(--font3);padding: 5px;font-size: 30px;justify-content: center;display: flex;cursor: pointer;color: white;"
+                                        onclick="season1()">
+                                        Season 1</p>
+                                    <div id="hover1"
+                                        style="background-color: black;height: 93%;width: 99%;border-radius: 9px 10px 23px 7px;margin-left: 0.5%;margin-top: -12.9%;color: white;">
+                                    </div>
+                                </div>
+                                <!--Continue--->
+                                <div
+                                    style="width: 34%;height: 93%;background-color: aqua;border-radius: 9px;margin-left: 34.5%;margin-top: -4.6%;">
+                                    <p id="1"
+                                        style="font-family: var(--font3);padding: 5px;font-size: 30px;justify-content: center;display: flex;cursor: pointer;"
+                                        onclick="season2()">
+                                        Season 2</p>
+                                    <div id="hover2"
+                                        style="background-color: black;height: 93%;width: 99%;border-radius: 9px 10px 23px 7px;margin-left: 0.5%;margin-top: -12.9%;color: white;display: none;">
+                                    </div>
+                                </div>
+                                <div
+                                    style="width: 32%;height: 93%;background-color: aqua;border-radius: 9px;margin-left: 68%;margin-top: -4.6%;">
+                                    <p
+                                        style="font-family: var(--font3);padding: 5px;font-size: 30px;justify-content: center;display: flex;cursor: pointer;">
+                                        Season 3</p>
+                                </div>
+                            </div>
+                            <div id="Season1">
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 1</p>
+                                    <!--Introduction to RichDad poorDad--->
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon1">
+                                </div>
+                                <!--Song1-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 2</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon2">
+                                </div>
+                                <!--Song2-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 3</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon3">
+                                </div>
+                                <!--Song3-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 4</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon4">
+                                </div>
+                                <!--Song4-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 5</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon5">
+                                </div>
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">More Audio -
+                                        Books are Comming Soon</p>
+                                </div>
+                                <!--Song5-->
+                            </div>
+                            <script>
+                                function season1() {
+                                    document.getElementById("Season1").style.display = "block";
+                                    document.getElementById("Season2").style.display = "none";
+                                }
+
+                                function season2() {
+                                    document.getElementById("Season1").style.display = "none";
+                                    document.getElementById("Season2").style.display = "block";
+                                    document.getElementById("hover2").style.display = "";
+                                    document.getElementById("1").style.color = "white";
+                                }
+                            </script>
+                            <!--Season 2-->
+                            <div id="Season2">
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 1</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon14">
+                                </div>
+                                <!--Song14-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 2</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon15">
+                                </div>
+                                <!--Song15-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 3</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon16">
+                                </div>
+                                <!--Song16-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 4</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon17">
+                                </div>
+                                <!--Song17-->
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">Rich Dad Poor
+                                        Dad -
+                                        Episode 5</p>
+                                    <img src="/Images/Icons/play.png" alt="play" class="bell" id="icon18">
+                                </div>
+                                <div
+                                    style="background-color: #c9b7b1;height: 10%;width: 99%;margin-left: 5px;border-radius: 18px;margin-top: 2px;">
+                                    <p style="font-family: var(--font3);padding: 15px;font-size: 25px;">More Audio -
+                                        Books are Comming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="music">
+                <audio id="mySong1">
+                    <!---Rich_Dad_Poor_Dad-Ep.1-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-01-01.mp3"
+                        type="audio/mp3">
+                    <!--Song Source--->
+                </audio>
+
+                <script>//icon1
+                    var mySong1 = document.getElementById("mySong1");
+                    var icon1 = document.getElementById("icon1");
+
+                    icon1.onclick = function () {
+                        if (mySong1.paused) {
+                            mySong1.play();
+                            icon1.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong1.pause();
+                            icon1.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong2">
+                    <!---Rich_Dad_Poor_Dad-Ep.2-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-01-02.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong2 = document.getElementById("mySong2");
+                    var icon2 = document.getElementById("icon2");
+
+                    icon2.onclick = function () {
+                        if (mySong2.paused) {
+                            mySong2.play();
+                            icon2.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong2.pause();
+                            icon2.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong3">
+                    <!---Rich_Dad_Poor_Dad-Ep.3-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-01-03.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong3 = document.getElementById("mySong3");
+                    var icon3 = document.getElementById("icon3");
+
+                    icon3.onclick = function () {
+                        if (mySong3.paused) {
+                            mySong3.play();
+                            icon3.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong3.pause();
+                            icon3.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong4">
+                    <!---Rich_Dad_Poor_Dad-Ep.4-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-01-04.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong4 = document.getElementById("mySong4");
+                    var icon4 = document.getElementById("icon4");
+
+                    icon4.onclick = function () {
+                        if (mySong4.paused) {
+                            mySong4.play();
+                            icon4.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong4.pause();
+                            icon4.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong5">
+                    <!---Rich_Dad_Poor_Dad-Ep.5-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-01-05.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong5 = document.getElementById("mySong5");
+                    var icon5 = document.getElementById("icon5");
+
+                    icon5.onclick = function () {
+                        if (mySong5.paused) {
+                            mySong5.play();
+                            icon5.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong5.pause();
+                            icon5.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong14">
+                    <!---Rich_Dad_Poor_Dad-S-2-Ep.1-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-02-01.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong14 = document.getElementById("mySong14");
+                    var icon14 = document.getElementById("icon14");
+
+                    icon14.onclick = function () {
+                        if (mySong14.paused) {
+                            mySong14.play();
+                            icon14.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong14.pause();
+                            icon14.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong15">
+                    <!---Rich_Dad_Poor_Dad-S-2-Ep.2-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-02-02.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong15 = document.getElementById("mySong15");
+                    var icon15 = document.getElementById("icon15");
+
+                    icon15.onclick = function () {
+                        if (mySong15.paused) {
+                            mySong15.play();
+                            icon15.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong15.pause();
+                            icon15.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong16">
+                    <!---Rich_Dad_Poor_Dad-S-2-Ep.3-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-02-03.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong16 = document.getElementById("mySong16");
+                    var icon16 = document.getElementById("icon16");
+
+                    icon16.onclick = function () {
+                        if (mySong16.paused) {
+                            mySong16.play();
+                            icon16.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong16.pause();
+                            icon16.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong17">
+                    <!---Rich_Dad_Poor_Dad-S-2-Ep.4-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-02-04.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong17 = document.getElementById("mySong17");
+                    var icon17 = document.getElementById("icon17");
+
+                    icon17.onclick = function () {
+                        if (mySong17.paused) {
+                            mySong17.play();
+                            icon17.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong17.pause();
+                            icon17.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+                <audio id="mySong18">
+                    <!---Rich_Dad_Poor_Dad-S-2-Ep.5-->
+                    <source src="/media/Robert_Kiyosaki_-_Rich_Dad_Poor_ Dad[English]/RichDad-PoorDad-02-05.mp3"
+                        type="audio/mp3"> -->
+                    <!--Song Source--->
+                </audio>
+                <script>//icon1
+                    var mySong18 = document.getElementById("mySong18");
+                    var icon18 = document.getElementById("icon18");
+
+                    icon18.onclick = function () {
+                        if (mySong18.paused) {
+                            mySong18.play();
+                            icon18.src = "/Images/Icons/pause.png";//Pause Button
+                        }
+                        else {
+                            mySong18.pause();
+                            icon18.src = "/Images/Icons/play.png";//Play Button
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+</body>
+<script>
+    var id = document.getElementById("nav");
+    var scrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 20) {
+            id.style.opacity = "0";
+
+        }
+        else {
+            id.style.opacity = "1";
+        }
+    };
+    window.addEventListener("scroll", scrollFunc);
+</script>
+
+</html>

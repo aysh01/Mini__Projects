@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/slider1.css">
+    <link rel="stylesheet" href="css/SideNav2.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <!-- <link rel="stylesheet" href="css/dark.css"> -->
+    <!-----JavaScript-->
+    <!-- <script src="dark.js"></script> -->
+    <title>Library - Home Page |</title>
+    <link rel="icon" href="Images/Logo/Logo.jpg">
+</head>
+
+<body>
+    <div id="preloader">
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+    </div>
+
+    <div class="navigation m-auto"><!--max-width-1-->
+        <div class="nav-left">
+            <div class="nav-left-1">
+                <div class="nav-left-1-images">
+                    <div id="myNav" class="overlay">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <img src="Images/Logo/Logo.jpg" alt="Logo-Here" class="nav-left-logo">
+                            <a href="Register.html" class="overlay-content-1"
+                                style="width: 127px; border: 2px solid black;">Register</a>
+                            <a href="#" class="overlay-content-1" style="width: 127px; 
+                            border: 2px solid black; border-block-start: inherit;">About us</a>
+                            <a href="Books.html" class="overlay-content-1" style="width: 127px; 
+                            border: 2px solid black; border-block-start: inherit;">Audio-Books</a>
+                        </div>
+                    </div>
+                    <span class="dash" onclick="openNav()">&#9776;</span>
+                    <script>
+                        function openNav() {
+                            document.getElementById("myNav").style.width = "9.4%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <!-----darkmode.html---->
+                <li><a href="e-library.html">e-library</a></li>
+                <div class="dropdown">
+                    <li><a style="cursor: pointer;">Books</a></li>
+                    <div class="dropdown-content" style="cursor: pointer;">
+                        <a href="#">No. of Books in Library
+                            <!-- <div class="a1">26</div> -->
+                        </a>
+                        <a href="#">No. of Subjects
+                            <!-- <div class="a2">20</div> -->
+                        </a>
+                    </div>
+                </div>
+                <li><a href="/Books.html" style="cursor: pointer;">Audio - Books</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#"><input class="form-input" type="text" placeholder="Find related Content"></a>
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+
+    </div>
+    <div class="content"><!--max-width-1 m-auto-->
+        <div class="body">
+            <div class="marquee">
+                <marquee width="100%" behaviour="scroll">
+                    <a href="e-library.html" class="marquee-1">NeW Updates-></a>&nbsp;
+                    <a href="e-library.html" class="marquee-2">Online Books Available-></a>&nbsp;
+                    <a href="" class="marquee-2">New Users</a>&nbsp;<a href="Register.html" class="marquee-3">Register
+                        Here-></a>
+                    <a href="Books.html" class="marquee-4">&nbsp;Audio Books | Available.</a>
+                </marquee>
+            </div>
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <div class="image-container">
+                    <div class="slideshow-container">
+                        <div class="sliding">
+                            <!-- <img src="/Images/Library/Library.png" class="slide" width="500" height="300" />
+                            <img src="/Images/Library/Library4.png" class="slide" width="500" height="300" /> -->
+                            <!-- <img src="/Images/Library/Library3.png" class="slide" width="500" height="300" /> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="buttons">
+                    <a href="#slide-1" style="text-decoration: none;">&#10094;</a>
+                    <a href="#slide-2" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&#10095;</a>
+                </div> -->
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="content-left font1" style="font-size: 15px;">
+                <h1>
+                    Welcome, To Library Management System !
+                </h1>
+                <div class="content-left-1 font2"><br>
+                    <h2 style="text-align: inherit; ">
+                        <li><u>Aims</u> & <u>Objective's</u> of Library are :
+                    </h2><br>
+                    <p class="content-left-1 font1" style="font-size: 25px;">
+                        1 To provide library services to support and fulfill the institutional goals.
+                        <br>
+                        2 To acquire information resources.
+                        <br>
+                        3 To organize library collection and services.<br>
+                        4 To facilitate the retrieval of materials.<br>
+                        5 To attract readers to use the library.
+                    </p>
+                </div>
+            </div>
+            <div class="body-main">
+                <h1 style="margin-left: 11.8%; font-size: 63px; color: red; border: 3px solid red;">
+                    &nbsp;General Library Rules&nbsp;
+                </h1>
+                <img src="Images/Library/Library3.png" alt="Blogger" class="body-main-images">
+                <h3 class="content-left-1 font2">
+                    <br>
+                    <u>Terms</u> & <u>Condtions</u>:<br>
+                    <input type="checkbox">&nbsp;Students must carry their own College Identity Card.<br><br>
+                    <input type="checkbox">&nbsp;While, entering kindly enter your [<u>Name</u>, <u>class</u> and the
+                    <u>time</u> of <u>entry</u>]
+                    at the entrance for the purpose.<br><br>
+                    <input type="checkbox">&nbsp;Please Switch-Off the Mobiles while entering Library premises.
+                    <br><br>
+                    <input type="checkbox">&nbsp;Eating, Sleeping and Talking loudly is strictly prohibited.<br><br>
+                    <input type="checkbox">&nbsp;Keep your bags and all the belongins outside the library.
+                    <br><br>
+                    <input type="checkbox">&nbsp;Library Administration is not responsible for any loss / theft of your
+                    personal belongings.
+                    <br><br>
+                    <input type="checkbox">&nbsp;Therefore, library material can't be taken out of the Library without
+                    permission of the
+                    librarian.<br><br>
+                    <div class="box" style="width: 119.5%;">
+                        &nbsp;<u>Note</u> : Readers should not mark, underline, write or tear - pages or damage the
+                        library
+                        books.<br>
+                        &nbsp;<u>Note</u> : If, found guilty then he/she must pay the charges for the damage.<br>
+                        &nbsp;<u>Note</u> : If, anyone voilates the rules and regulations of the Library.<br>
+                        &nbsp;<u>Note</u> : Then, he/she will be debrarred from using the library facilities.
+                    </div>
+                </h3>
+                <div class="content-right">
+                    <a href="Books.html">
+                        <img src="Images/Library/Library2.png" alt="Ublog" class="content-right-images">
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyright &copy; 2022 Library | Management System</p>
+                <a href="attributions.html">Credits</a>
+            </div>
+            <div class="main"><br>
+                <p class="main-p">
+                    "Winning Always Starts with the Beginning .."
+                </p>
+                <!-- <img src="#" alt="NeXt" class="main-images"> -->
+            </div>
+            <div class="arrow">
+                <!----Changes---->
+                <a href="#content-left" style="text-decoration: none;">Scroll to Top&#x2191;
+            </div></a>
+</body>
+
+</html>

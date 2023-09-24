@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Us</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div class="about">
+        <section class="newsletter"></section>
+    </div>
+    <div class="bottom">
+        <h1 class="whatislibrary">
+            What is a Library
+            Management System ?</h1>
+        <div class="answer"><br>
+            <h2 style="text-align: left; ">
+                <p
+                    style="margin-left: 1%;font-size: 50%;padding: 2px 2px 5px;border: 2px solid;border-block: inherit;letter-spacing: 4px;text-shadow: black 2px 6px 20px;">
+                    &nbsp;It's a software were basic operations of
+                    a library are performed. It, &nbsp;provides information about the books which are present in the
+                    &nbsp;library. It, also helps to keep a track of books published, given in &nbsp;return, etc.
+                </p>
+            </h2><br>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="category">
+            &nbsp;According to the mode of services rendered to the readers &nbsp;the libraries are broadly divided into
+            <u>four</u> <u>t</u><u>ypes</u> :
+            <br>
+            &nbsp;1 Academic Library.
+            <br>
+            &nbsp;2 Special Library.<br>
+            &nbsp;3 Public Library.<br>
+            &nbsp;4 National Library.
+        </p>
+    </div>
+    <img src="/ProjecT (Library)/imagesbkup/security.png" class="footer-img">
+    <div class="footer-hr">
+        <hr><span>Benefits of Library Management System</span>
+    </div>
+    <div class="bottom-footer">
+        <div class="bottom-footer-1">
+            <h1>Our Clients Review's</h1>
+            <div style="width: 99%;height: 98.5%;overflow: scroll;padding: 5px;scroll-behavior: smooth;">
+                <!---ScrollBar-->
+                <div class="bottom-scroll">
+                    <!--bottom-scroll--->
+                    <img src="/ProjecT (Library)/imagesbkup/about/pic-1.png">
+                    <h3>John Deo</h3>
+                    <p>Excellent writting, th first work presents the authentic work. Highly recommended for all public
+                        and academic libraries. This, library is a rare gem.</p>
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/half-star.png" width="20px" height="15px">
+                </div>
+
+                <div class="bottom-scroll1">
+                    <!--bottom-scroll1--->
+                    <img src="/ProjecT (Library)/imagesbkup/about/pic-3.png">
+                    <h3>Walter White</h3>
+                    <p>I, was literally surprised at the speed of response. I'm deeply appreciative of this supportive
+                        service. I, just love this library.</p>
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/half-star.png" width="20px" height="15px">
+                </div>
+
+                <div class="bottom-scroll2">
+                    <!--bottom-scroll2--->
+                    <img src="/ProjecT (Library)/imagesbkup/about/pic-2.png">
+                    <h3>Miss Watson</h3>
+                    <p>Very happy with the service. Easy to use, the library kept me updated at all stages. Always,
+                        prompt and friendly. Wonderful team to work with.</p>
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/star.png" width="20px" height="15px">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/half-star.png" width="20px" height="15px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="top" class="top">
+        <!--Quick/Links--->
+        <div class="border">
+        </div>
+        <div class="dropdown">
+            <p style="cursor: pointer;">Quick Links</p>
+            <div class="dropdown-content" style="cursor: pointer;">
+                <a href="index.html">Home
+                </a>
+                <a href="Books.html">Order Books Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Extra/Links--->
+    <div class="border1">
+    </div>
+    <p class="top-p1" style="cursor: pointer;">Extra Links</p>
+    <p class="top-p1" style="cursor: pointer;" onclick="subscribe()">Subscribe</p>
+</body>
+<script>
+    function subscribe() {
+        var a = prompt("Enter your Email");
+        alert("Thanks for Subscribing");
+    }
+    // 1645
+    var id = document.getElementById("top");
+    // var type=document.getElementById("type");
+    var scrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 1640) {
+            id.style.opacity = "1";
+            id.style.height = "25vh";
+            id.style.marginTop = "5vh";
+            id.style.transition = "0.6s";
+            // type.style.animationName = "animate";
+        }
+        else {
+            id.style.opacity = "0";
+            id.style.height = "";
+            id.style.marginTop = "";
+            id.style.transition = "0.6s";
+        }
+    };
+    window.addEventListener("scroll", scrollFunc);
+
+</script>
+
+</html>

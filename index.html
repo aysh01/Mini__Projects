@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Library - Home Page |</title>
+    <link rel="icon" href="Images/Logo/Logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <!--2-->
+    <link rel="stylesheet" href="css/bkup2.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/horiz.css">
+    <!--1-->
+
+    <!--===============JavaScript-=================-->
+    <script src="/js/index.js"></script>
+    <script src="/js/horiz.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <div id="preloader"></div>
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <!-- <a class="logo" style="font-size: 30px;cursor: pointer;font-family: var(--font3);"
+                onclick="logo()">Books.com</a> -->
+
+            <img src="/ProjecT (Library)/Stock_Images/book (transparent).png" height="90px" width="90px">
+            <p class="container-p" onmouseover="p(this)" onmouseout="pc(this)">Library</p>
+            <a class="nav" id="n" onclick="toggle()">&#9776;</a>
+            <ul id="nav-toggle" class="ul" style="font-family: var(--font2);">
+                <a href="/index.html" style="text-decoration: none;">
+                    <li id="h" style="list-style-type: none;cursor: pointer;color: white;">Home</li>
+                </a>
+                <a href="about.html" style="text-decoration: none;">
+                    <li id="about" class="about"
+                        style="list-style-type: none;margin-left: 30px;cursor: pointer;color: var(--rebeca);">About</li>
+                </a>
+                <a onclick="book()" style="text-decoration: none;">
+                    <li id="books" style="list-style-type: none;margin-left: 30px;cursor: pointer;">Books</li>
+                </a>
+                <a href="music.html" style="text-decoration: none;">
+                    <li id="audiobooks" style="list-style-type: none;margin-left: 30px;width: 140px;cursor: pointer;">
+                        Audio Books</li>
+                </a>
+                <a style="text-decoration: none;">
+                    <li id="search" style="list-style-type: none;margin-left: 30px;width: 140px;cursor: pointer;"
+                        onclick="fun()">
+                        Search</li>
+                </a>
+                <script>
+                    function fun() {
+                        window.location.href = "search.html";
+                    }
+
+                    function logoo() {
+                        document.getElementById("dashboard").style.display = "flex";
+                        document.getElementById("user").style.display = "flex";
+                    }
+
+                    function logo1() {
+                        document.getElementById("dashboard").style.display = "none";
+                        document.getElementById("user").style.display = "none";
+                    }
+
+                    function dashboard() {
+                        window.location.href = "login.html";
+                    }
+                </script>
+                <div class="logo-image">
+                    <img src="/ProjecT (Library)/imagesbkup/Icons/Account.png" alt="" onclick="logoo()">
+                    <a id="dashboard" onclick="dashboard()">Dashboard</a>
+                </div>
+                <img src="/ProjecT (Library)/imagesbkup/Icons/User.png" alt="" id="user" class="logo-img-a" onclick="logo1()">
+            </ul>
+            <div id="nv" class="nv" style="cursor: pointer;" onclick="toggleN()">&#9783;</div>
+            <script>
+                function toggle() {
+                    document.getElementById("nav-toggle").style.display = "";
+                    document.getElementById("n").style.display = "none";
+                    document.getElementById("nv").style.display = "unset";
+                    document.getElementById("h").style.color = "";
+                }
+
+                function toggleN() {
+                    document.getElementById("nav-toggle").style.display = "none";
+                    document.getElementById("n").style.display = "";
+                }
+
+                var nav = document.getElementById("nav-toggle");
+                var nv = document.getElementById("nv");
+                window.addEventListener("load", function () {
+                    nav.style.display = "none";
+                    nv.style.display = "none";
+                })
+
+                var loader = document.getElementById("preloader");
+                window.addEventListener("load", function () {
+                    loader.style.display = "none";
+                })
+            </script>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <p class="up">Best of Editor's Choice </p>
+                <!--Get Books upto 60% Off-->
+                <!-- <button class="down" style="cursor: pointer;" onmouseover="down(this)" onmouseout="downbtn(this)">Shop
+                    Now</button> -->
+            </h1>
+            <div class="shop-now">
+                <img src="/ProjecT (Library)/imagesbkup/Books/71VH2HWR1TL._AC_UY218_.jpg" height="250px" width="200px"
+                    style="cursor: pointer;" onmouseover="big(this)" onmouseout="normal(this)">&nbsp;&nbsp;
+                <img src="/ProjecT (Library)/imagesbkup/Books/81+aVedEtpL._AC_UY218_.jpg" height="250px" width="200px"
+                    style="cursor: pointer;" onmouseover="big(this)" onmouseout="normal(this)">&nbsp;&nbsp;
+                <img src="/ProjecT (Library)/imagesbkup/Books/91+T1TAxkKL._AC_UY218_.jpg" height="250px" width="200px"
+                    style="cursor: pointer;" onmouseover="big(this)" onmouseout="normal(this)">&nbsp;&nbsp;
+                <img src="/ProjecT (Library)/imagesbkup/Books/th.jpg" height="250px" width="200px" style="cursor: pointer;"
+                    onmouseover="big(this)" onmouseout="normal(this)">&nbsp;&nbsp;
+                <img src="/ProjecT (Library)/imagesbkup/Books/71+bH9AZ3IL._AC_UY218_.jpg" height="250px" width="200px"
+                    style="cursor: pointer;" onmouseover="big(this)" onmouseout="normal(this)">
+                <script>
+                    function p(x) {
+                        x.style.letterSpacing = "12px";
+                        x.style.transition = "0.5s";
+                    }
+
+                    function pc(x) {
+                        x.style.letterSpacing = "10px";
+                        x.style.transition = "0.5s";
+                    }
+                    function big(x) {
+                        x.style.height = "270px";
+                        x.style.width = "200px";
+                        x.style.transition = "0.5s";
+                        x.style.borderRadius = "15px";
+                        x.style.boxShadow = "2px 0px 11px 3px";
+                    }
+
+                    function normal(x) {
+                        x.style.height = "";
+                        x.style.width = "";
+                        x.style.transition = "0.5s";
+                        x.style.borderRadius = "";
+                        x.style.boxShadow = "";
+                    }
+                    function down(x) {
+                        // x.style.justifyContent = "unset";
+                        x.style.transition = "0.5s";
+                        x.style.boxShadow = "2px 2px 3px";
+                        x.style.backgroundColor = "var(--green)";
+                    }
+
+                    function downbtn(x) {
+                        x.style.justifyContent = "center";
+                        x.style.transition = "0.5s";
+                        x.style.boxShadow = "";
+                        x.style.backgroundColor = "";
+                    }
+                </script>
+            </div>
+            <div>
+                <img src="/ProjecT (Library)/imagesbkup/stand.png" height="250px" width="1200px"
+                    style="margin-left: -1%;margin-top: -1.5%;">
+            </div>
+            <!-- <p class="header-subtitle">FRONTEND WEB DESIGNER</p> -->
+            <!-- <button class="btn" style="background-color: #695aa6cc;border: none;cursor: pointer;">Visit My
+                Works</button> -->
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="content-left font1" style="font-size: 15px;">
+            <div class="hr1">
+                <hr>
+            </div>
+            <h1 style="margin-top: 0%;">
+                Welcome, To Library Management System !
+            </h1>
+            <div id="wrap" class="wrap-image">
+                <img id="img" src="/ProjecT (Library)/imagesbkup/Library/Library2.png" height="540px" width="98%"
+                    style="margin-left: 1%;filter: blur(6px);border-radius: 50px 1px;">
+                <!-- <h1
+                    style="margin-top: -40%;text-align: center;text-shadow: black 2px 6px 20px;filter: brightness(0.5);">
+                    Welcome, To Library
+                    Management System !</h1>
+                <div class="content-left-1 font2"><br>
+                    <h2 style="text-align: center; ">
+                        <li><u>Aims</u> & <u>Objective's</u> of Library are :
+                    </h2><br>
+                    <p class="content-left-1 font1" style="font-size: 25px;font-weight: 500;line-height: 1.2;">
+                    <ul class="dynamic-txts">
+                        <li><span> 1 To provide library services to support and fulfill the institutional goals.</span>
+                        </li>
+                        <li><span>2 To acquire information resources.</span></li>
+                        <li><span>3 To organize library collection and services.</span></li>
+                        <li><span>4 To facilitate the retrieval of materials.</span></li>
+                        <li><span>5 To attract readers to use the library.</span></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <script>
+            var id = document.getElementById("img");
+            var wrap = document.getElementById("wrap");
+            var h = document.getElementById("h");
+            var about = document.getElementById("about");
+            var books = document.getElementById("books");
+            var audiobooks = document.getElementById("audiobooks");
+            var search = document.getElementById("search");
+            var scrollFunc = function () {
+                var y = window.scrollY;
+                if (y >= 650) {
+                    id.style.opacity = "1";
+                    wrap.style.display = "unset";
+                    h.style.color = "var(--light)";
+                    about.style.color = "var(--light)";
+                    books.style.color = "var(--light)";
+                    audiobooks.style.color = "var(--light)";
+                    search.style.color = "var(--light)";
+                }
+                else {
+                    id.style.opacity = "0";
+                    wrap.style.display = "none";
+                    h.style.color = "";
+                    about.style.color = "";
+                    books.style.color = "";
+                    audiobooks.style.color = "";
+                    search.style.color = "";
+                }
+
+            };
+            window.addEventListener("scroll", scrollFunc);
+        </script>
+        <!-- <div id="wrapB" class="wrapB">
+            <div class="scroll"></div>
+
+            <div class="overflow">
+                <div class="page page_1"><img src="/Screenshot_20220628-095729~2.png" width="250px" height="200px"
+                        onmouseover="scale(this)" onmouseout="scalex(this)">Lorem ipsum
+                    dolor sit amet consectetur
+                    adipisicing elit. Autem quam error quasi commodi
+                    dolor eveniet reprehenderit voluptatem eaque earum esse. Nihil, voluptatum officia. Vel perferendis
+                    nemo
+                    saepe rem odio illo.</div>
+                <div class="page page_2"><img src="/bell-icon.png" width="250px" height="200px"
+                        onmouseover="scale(this)" onmouseout="scalex(this)">Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing elit. Eum, sunt placeat, numquam
+                    totam id dignissimos fugit ipsa veritatis expedita, voluptate ratione. Accusantium aspernatur,
+                    corrupti illo
+                    saepe excepturi facilis laudantium error?</div>
+                <div class="page page_3"><img src="/th.jpg" width="250px" height="200px" onmouseover="scale(this)"
+                        onmouseout="scalex(this)">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Architecto in accusantium a
+                    molestias debitis, reprehenderit enim autem repellat porro nesciunt, velit totam soluta, quos
+                    mollitia
+                    sapiente temporibus consequuntur. Esse, impedit.</div>
+            </div>
+        </div> -->
+</body>
+
+</html>
