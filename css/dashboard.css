@@ -1,0 +1,32 @@
+.logo-image {
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    margin-top: -2%;
+    /* border: 1px solid; */
+    border-radius: 40px;
+    /* background: rebeccapurple; */
+    cursor: pointer;
+}
+
+.logo-image a {
+    text-decoration: none;
+    display: none;
+    margin-top: 1.5vh;
+    margin-left: 5%;
+    color: rebeccapurple;
+}
+
+.logo-image a:hover {
+    color: white;
+}
+
+.logo-img-a {
+    filter: invert(1);
+    display: none;
+    justify-content: center;
+    height: 7vh;
+    margin-top: -2%;
+    margin-left: -12vw;
+    cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.buttons1 {
+    position: relative;
+    top: -20px;
+}
+
+.buttons1 a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+}
+/* Slider2*/
+.slider2 {
+    width: 75.5%;
+    height: 330px;
+    background-color: yellow;
+    /* margin-left: auto; */
+    margin-left: 24.5%;
+    margin-top: -20.9%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.image-container2 {
+    width: 1500%;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+    /* background-color: red; */
+}
+
+.slide2 {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slide1-1:target~.image-container2 {
+    left: 0px;
+}
+
+#slide2-2:target~.image-container2 {
+    left: -500px;
+}
+
+#slide3-3:target~.image-container2 {
+    left: -1000px;
+}
+
+#slide4-4:target~.image-container{
+    left: -3917px;
+}
+.buttons2 {
+    position: relative;
+    top: -20px;
+    display: flex;
+    margin-left: 40%;
+}
+
+.buttons2 a {
+    display: inline-block;
+    height: 16px;
+    width: 60px;
+    border-radius: 70px;
+    background-color: royalblue
+}
+
+.buttons2 a:hover {
+    background-color: #fff;
+    transition: 0.5s;
+}

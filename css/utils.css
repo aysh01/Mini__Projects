@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@800&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("D:\ThisPc (Ultimate_Bkup)\Documents (Bkup)\ProjecT (Library)\Fonts\Kavivanar\Kavivanar-Regular.ttf");
+@import url("D:\ThisPc (Ultimate_Bkup)\Documents (Bkup)\ProjecT (Library)\Fonts\de-valencia\De Valencia.otf");
+
+:root {
+    --main-bg-color: red;
+    --main-color: red;
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Abel', sans-serif;
+    --font4: 'Kavivanar', 'Regular';
+    --font5: 'de-valencia', 'Regular';
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.font3 {
+    font-family: var(--font3);
+}
+
+.font4 {
+    font-family: var(--font4);
+}
+
+.font5 {
+    font-family: var(--font5);
+}
+
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    padding: 3px 20px;
+    margin-bottom: 4px;
+    padding-top: 3px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: var(--font1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.form-input {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 30px 38px;
+    font-family: var(--font1);
+}
+
+.form-input-1 {
+    padding: 0px 5px;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 27px;
+    margin: 0 422px;
+    margin-left: 22%;
+    margin-bottom: 1%;
+    font-family: var(--font1);
+}
+
+.hr {
+    border: 0px solid black;
+    margin-top: -33%;
+    height: 20px;
+    width: 98vw;
+    margin-left: 0%;
+}
+
+.hr1 {
+    border: 0px solid black;
+    margin-top: 8%;
+    height: 20px;
+    width: 98vw;
+    margin-left: 0%;
+}
+
+.hr2 {
+    border: 0px solid black;
+    /* margin-top: 8%; */
+    height: 20px;
+    width: 98vw;
+    margin-left: 0%;
+}
+
+.hr3 {
+    border: 0px solid black;
+    /* margin-top: 8%; */
+    height: 20px;
+    width: 98vw;
+    margin-left: 0%;
+}
+
+.arrow {
+    margin-left: 93%;
+    /* margin-top: 6%; */
+    background: antiquewhite;
+    border: 2px solid black;
+    border-block-start: inherit;
+    border-block-end: inherit;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:hover {
+    color: var(--main-bg-color);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.box {
+    background: aliceblue;
+    border: 2px solid black;
+    border-block-start: inherit;
+}

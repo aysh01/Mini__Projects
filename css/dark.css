@@ -1,0 +1,11 @@
+:root {
+    --color-bg: #ffffff;
+}
+
+.component {
+    background-color: var(--color-bg);
+}
+
+[data-theme="dark"] {
+    --color-bg: #000000;
+}

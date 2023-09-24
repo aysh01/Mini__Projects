@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+
+.navbar-container {
+    height: 98vh;
+    margin-left: 13px;
+    width: 98%;
+    background: radial-gradient(white, #00000008);
+    border-radius: 175px 36% 50% 37%;
+    margin-top: 6.5%;
+}
+
+.container {
+    height: 133vh;
+    width: 100%;
+    background-image: url(/Images/AudioBooks/Digital-Spectrum.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bell {
+    height: 56px;
+    margin-left: 91%;
+    margin-top: -91%;
+    width: 92px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.image-exp {
+    opacity: 0.5;
+    background-color: darkblue;
+    height: 100%;
+    width: 99%;
+    margin-top: -23.2%;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+#preloader-audio {
+    background: black url(/Gif/Audio.gif) no-repeat center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navigation{
+
+}
+
+.navigation-ul{
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 18px;
+}

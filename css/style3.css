@@ -1,0 +1,84 @@
+.content {
+    display: flex;
+    height: 350px;
+    /*background-color: rgb(77, 77, 231);*/
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+
+.home-articles {
+    /*background-color: rgb(28, 40, 110);*/
+    border: 2px solid black;
+    border-radius: 31%;
+    margin-top: 0px;
+    padding: 11px;
+    padding-top: 15px;
+}
+
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-articles-images-1 {
+    width: 300px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.content-images {
+    height: 112%;
+    margin-left: 33%;
+    padding: 21px;
+    border-radius: 27%;
+    border: 2px solid black;
+    border-block-style: initial;
+}
+
+.background-images {
+    content: "";
+    position: absolute;
+    /*background-color: blue;*/
+    width: 30%;
+    height: 99%;
+    margin-top: -7px;
+}
+
+.h2 {
+    font-size: 27px;
+    padding: 6px;
+    padding-bottom: 9px;
+    margin-left: 10%;
+}
+
+.h3 {
+    font-size: 38px;
+    margin-left: 31%;
+    padding: 8px;
+}
+
+.h4 {
+    font-size: 39px;
+    margin-left: 15%;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    color: red;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
